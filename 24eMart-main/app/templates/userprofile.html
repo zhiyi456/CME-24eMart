@@ -1,0 +1,36 @@
+	{% extends "base.html" %}
+
+{% block title %}
+	Profile - 24eMart
+{% endblock %}
+
+{% block content %}
+	<br><br><h3>Profile</h3>
+  <!-- 'Name', 'account_number-indec', 'admin-index',
+  'credit_card_number-index','email_confirmed-index',
+  'email-index','gender-index','membership_type-index',
+  'password-index','phone-index' -->
+	<br>
+	<table>
+    <tr>
+      <td>Name: {{item.Name}}</td>
+    </tr>
+    <tr>
+      <td>Credit Card Number: {{item.Credit_card_number}}</td>
+    </tr>
+    <tr>
+      <td>Email: {{item.Email}}</td>
+    </tr>
+    <tr>
+      <td>Gender: {{item.Gender}}</td>
+    </tr>
+    <tr>
+      <td>Phone: {{item.Phone}}</td>
+    </tr>
+  </table>
+
+	</a>
+
+	</div>
+
+{% endblock %}
