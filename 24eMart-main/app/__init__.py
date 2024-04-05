@@ -36,7 +36,7 @@ app.register_blueprint(admin)
 #
 
 
-app.config["SECRET_KEY"] = "" # TODO: research on what this secret key is for
+#app.config["SECRET_KEY"] = "" # TODO: research on what this secret key is for
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://admin:12345678@rds-mysql-db.csxucthsan5l.ap-southeast-1.rds.amazonaws.com:3306/rds24emart'
 # app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///test.db"
@@ -69,8 +69,8 @@ def load_user(user_id):
 	return User.query.get(user_id)
 
 S3_BUCKET = 'elasticbeanstalk-ap-southeast-1-645583429901'	
-AWS_ACCESS_KEY_ID = ''
-AWS_SECRET_ACCESS_KEY = ''
+# AWS_ACCESS_KEY_ID = ''
+# AWS_SECRET_ACCESS_KEY = ''
 #s3 = boto3.client('s3', aws_access_key_id=AWS_ACCESS_KEY_ID, aws_secret_access_key=AWS_SECRET_ACCESS_KEY)
 S3_REGION = 'ap-southeast-1'
 S3_config = Config(signature_version='s3v4')
