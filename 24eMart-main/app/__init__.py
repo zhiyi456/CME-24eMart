@@ -36,7 +36,7 @@ app.register_blueprint(admin)
 #
 
 
-app.config["SECRET_KEY"] = "123" # TODO: research on what this secret key is for
+app.config["SECRET_KEY"] = "" # TODO: research on what this secret key is for
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://admin:12345678@rds-mysql-db.csxucthsan5l.ap-southeast-1.rds.amazonaws.com:3306/rds24emart'
 # app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///test.db"
